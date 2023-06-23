@@ -33,6 +33,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/sorteio',Sorteio)
 app.use('/audio',Audio)
 app.use('/realtime',Realtime)
-app.listen(4000, ()=>{
-   console.log("Servidor na porta 4000") 
+app.listen(process.env.PORT || 4000, ()=>{
+   console.log("Servidor express em execução") 
 })
