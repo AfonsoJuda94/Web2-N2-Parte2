@@ -14,9 +14,10 @@ app.get('/endpoint', (req,res)=>
 {
     const range = req.headers.range
 })
-app.use(express.static('pages'))
+
 app.get('/', (req,res,next)=>{
     //res.send()
+    app.use(express.static('pages'))
     next()
 })
 
