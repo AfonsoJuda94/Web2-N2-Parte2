@@ -12,6 +12,7 @@ E) Criar uma interface para consumir o streamCriar uma interface para uso do sis
     <li>Os arquivos 'times_imgs.json' e 'partidas.json' são utilizados para armazenar as partidas geradas pela função Sorteio() e postoriormente para leitura e renderização das imagens e nomes dos times em "localhost:3000/sorteio".</li>
     <li>Foi criado um servidor Socket.io a parte em "localhost:5000"</li>
     <li>Os arquivo "server.js" e "index.html" ficaram muito parecidos(praticamente idênticos) à instrução que peguei do ChatGPT sobre como fazer um Chat de tempo real com Express e NodeJS. Gostaria de notificar isso ao professor avaliador desse trabalho desejar desclassificar ou desconsiderar a questão.</li>
+    <li><it>Não foi implementado nada em Typescript</it></li>
   </ol>
   
 </p>
