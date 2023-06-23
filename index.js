@@ -54,6 +54,9 @@ app.use('/audio',Audio)
 app.listen(process.env.PORT || 3000, ()=>{
    console.log("Servidor express em execução") 
 })
+/*
 server.listen(process.env.PORT || 5000, ()=>{
     console.log('servidor socket.io na porta 5000')
+*/
+
 })
