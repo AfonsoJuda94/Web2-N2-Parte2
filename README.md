@@ -7,11 +7,11 @@ C) Incluir linguagem Typescript em alguma parte do projeto<br>
 D) Criar uma interface web para visualizar os jogos sorteados<br>
 E) Criar uma interface para consumir o streamCriar uma interface para uso do sistema de tempo real<br>
 <h2>OBSERVAÇỖES</h2>
-<p style="text-weight:bold">
+<p style="textWeight:bold">
   <ol>
     <li>Os arquivos 'times_imgs.json' e 'partidas.json' são utilizados para armazenar as partidas geradas pela função Sorteio() e postoriormente para leitura e renderização das imagens e nomes dos times em "localhost:3000/sorteio".</li>
     <li>Foi criado um servidor Socket.io a parte em "localhost:5000"</li>
-    <li>Os arquivo "server.js" e "index.html" ficaram muito parecidos(praticamente idênticos) à instrução que peguei do ChatGPT sobre como fazer um Chat de tempo real com Express e NodeJS. Portanto, se o avaliador desejar desclassificar ou desconsiderar a questão.</li>
+    <li>Os arquivo "server.js" e "index.html" ficaram muito parecidos(praticamente idênticos) à instrução que peguei do ChatGPT sobre como fazer um Chat de tempo real com Express e NodeJS. Gostaria de notificar isso ao professor avaliador desse trabalho desejar desclassificar ou desconsiderar a questão.</li>
   </ol>
   
 </p>
