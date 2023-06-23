@@ -5,4 +5,5 @@ A) Incluir funcionalidade de tempo real (pode ser usando socket.)
 B) Incluir funcionalidade de stream de dados (pode ser vídeo, áudio ou documentos gerais)
 C) Incluir linguagem Typescript em alguma parte do projeto
 D) Criar uma interface web para visualizar os jogos sorteados
-E) Criar uma interface para consumir o streamCriar uma interface para uso do sistema de tempo real
+E) Criar uma interface para consumir o streamCriar uma interface para uso do sistema de tempo real/n
+
