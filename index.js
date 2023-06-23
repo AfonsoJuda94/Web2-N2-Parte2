@@ -30,14 +30,14 @@ const { estimatedDocumentCount } = require('./models/Team')
 app.get('/', (req,res,next)=>{
     //res.send()
     app.use(express.static('pages'))
-    res.send('<html>
+    res.send(`<html>
         <body style="text-align:center">
         <h1>Menu de funcionalidades</h1>
         <a href="/sorteio">Sorteio</a><br>
         <a href="/audio">Streaming de audio</a><br>
         <a href="http://localhost:5000">Funcionalidade de tempo real</a><br>
         </body>
-    </html>')
+    </html>`)
     next()
 })
 app.get('/endpoint', (req,res)=>
