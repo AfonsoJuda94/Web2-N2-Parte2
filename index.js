@@ -10,16 +10,17 @@ const Sorteio = require('./routes/sorteio')
 const Audio = require('./routes/audio.js')
 const Realtime = require('./public/server')
 const { estimatedDocumentCount } = require('./models/Team')
-app.get('/endpoint', (req,res)=>
-{
-    const range = req.headers.range
-})
-
 app.get('/', (req,res,next)=>{
     //res.send()
     app.use(express.static('pages'))
     next()
 })
+app.get('/endpoint', (req,res)=>
+{
+    const range = req.headers.range
+})
+
+
 
 app.get('/streaming', (req,res)=>{
     app.use(express.static('pages/streaming.html'))
