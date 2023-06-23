@@ -30,6 +30,7 @@ const { estimatedDocumentCount } = require('./models/Team')
 app.get('/', (req,res,next)=>{
     //res.send()
     app.use(express.static('pages'))
+    res.send('Funciona')
     next()
 })
 app.get('/endpoint', (req,res)=>
