@@ -69,7 +69,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //app.use('/streaming',Audio)
 app.use('/sorteio',Sorteio)
-app.use('/audio',Audio)
+app.use('streaming/audio',Audio)
 //app.use('/realtime',Realtime)
 app.listen(process.env.PORT || 3000, ()=>{
    console.log("Servidor express em execução") 
