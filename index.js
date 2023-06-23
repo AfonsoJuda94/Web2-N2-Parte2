@@ -8,13 +8,13 @@ const socketIO = require('socket.io')
 //const Audio = require('./routes/audio')
 const Sorteio = require('./routes/sorteio')
 const Audio = require('./routes/audio.js')
-const Realtime = require('./public/server.js')
+const Realtime = require('./public/server')
 const { estimatedDocumentCount } = require('./models/Team')
 app.get('/endpoint', (req,res)=>
 {
     const range = req.headers.range
 })
-app.get('/', (req,res)=>{
+app.get('/', (req,res,next)=>{
     res.send(`
         <body style="text-align:center">
         <h1>Menu de funcionalidades</h1>
@@ -23,6 +23,7 @@ app.get('/', (req,res)=>{
         <a href="http://localhost:5000">Funcionalidade de tempo real</a><br>
         </body>
     `)
+    next()
 })
 
 app.get('/streaming', (req,res)=>{
@@ -49,7 +50,7 @@ app.use(express.urlencoded({ extended: true }));
 //app.use('/streaming',Audio)
 app.use('/sorteio',Sorteio)
 app.use('/audio',Audio)
-//app.use('/realtime',Realtime)
-app.listen(3000, ()=>{
-   console.log("Servidor na porta 3000") 
+app.use('/realtime',Realtime)
+app.listen(4000, ()=>{
+   console.log("Servidor na porta 4000") 
 })
