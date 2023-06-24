@@ -48,6 +48,7 @@ app.get('/endpoint', (req,res)=>
 
 
 app.get('/streaming', (req,res)=>{
+    /*
     res.send(`
     <html>
         <head>
@@ -62,6 +63,8 @@ app.get('/streaming', (req,res)=>{
         </body>
     </html>
     `)
+    */
+    app.use(express.static('pages/streaming.html'))
 })
 
 //midwares
