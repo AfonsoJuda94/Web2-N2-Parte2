@@ -48,11 +48,11 @@ async function Sorteio(){
             }      
         }
         //console.log(partidas)
-        fs.writeFileSync('AfonsoJuda94/Web2-N2-Parte2/routes/partidas.json',JSON.stringify({partidas,p}))
+        fs.writeFileSync('/AfonsoJuda94/Web2-N2-Parte2/routes/partidas.json',JSON.stringify({partidas,p}))
     }
 }
 function leitura_partidas(){
-    const arquivo_partidas = fs.readFileSync('AfonsoJuda94/Web2-N2-Parte2/routes/partidas.json',{encoding: "utf8"})
+    const arquivo_partidas = fs.readFileSync('/AfonsoJuda94/Web2-N2-Parte2/routes/partidas.json',{encoding: "utf8"})
     const arquivo_times_imgs = fs.readFileSync('./times_imgs.json',{encoding: "utf-8"})
     const jsonData = JSON.parse(arquivo_partidas)
     const times_imgs = JSON.parse(arquivo_times_imgs)
