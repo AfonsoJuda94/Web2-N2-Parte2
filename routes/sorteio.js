@@ -48,7 +48,7 @@ async function Sorteio(){
             }      
         }
         //console.log(partidas)
-        fs.writeFileSync('partidas.json',JSON.stringify({partidas,p}))
+        fs.writeFileSync('./partidas.json',JSON.stringify({partidas,p}))
     }
 }
 function leitura_partidas(){
