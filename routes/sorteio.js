@@ -52,8 +52,8 @@ async function Sorteio(){
     }
 }
 function leitura_partidas(){
-    const arquivo_partidas = fs.readFileSync('../partidas.json',{encoding: "utf8"})
-    const arquivo_times_imgs = fs.readFileSync('../times_imgs.json',{encoding: "utf-8"})
+    const arquivo_partidas = fs.readFileSync('partidas.json',{encoding: "utf8"})
+    const arquivo_times_imgs = fs.readFileSync('times_imgs.json',{encoding: "utf-8"})
     const jsonData = JSON.parse(arquivo_partidas)
     const times_imgs = JSON.parse(arquivo_times_imgs)
     console.log(jsonData.p)
