@@ -58,7 +58,7 @@ app.get('/streaming', (req,res)=>{
         
         <body>
             <h2>Stream de vídeo</h2>
-            <audio src = "/AfonsoJuda94/Web2-N2-Parte2/audio.mp3" controls ="true"></audio>
+            <audio src = "./audio.mp3" controls ="true"></audio>
         </body>
     </html>
     `)
