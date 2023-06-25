@@ -8,7 +8,7 @@ D) Criar uma interface web para visualizar os jogos sorteados<br>
 E) Criar uma interface para consumir o streamCriar uma interface para uso do sistema de tempo real<br>
 <h2>OBSERVAÇỖES</h2>
 <p>
-  <h2>Link de acesso: <a>https://vercel.com/afonsojuda94/web2-n2-parte2/Hs8eeiwZZ2R7pXiuNv2nyMFeTwEu</a></h2>
+  <h2>Link de acesso: <a href='https://vercel.com/afonsojuda94/web2-n2-parte2/Hs8eeiwZZ2R7pXiuNv2nyMFeTwEu'>AfonsoN2Web2</a></h2>
 </p>
 
 <p style="textWeight:bold">
