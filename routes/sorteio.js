@@ -8,7 +8,7 @@ const { async } = require('regenerator-runtime')
 
 Sorteio()
 router.get('/',async (req, res) => {
-    
+    Sorteio()
     res.send(`
     <html>
         <head><title>Sorteio de jogos</title>
