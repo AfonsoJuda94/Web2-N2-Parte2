@@ -67,7 +67,7 @@ async function leitura_partidas(){
     
 
     arquivo_partidas = x[0].p
-    const arquivo_times_imgs = fs.readFileSync('./times_imgs.json',{encoding: "utf-8"})
+    const arquivo_times_imgs = fs.readFileSync('times_imgs.json',{encoding: "utf-8"})
     const times_imgs = JSON.parse(arquivo_times_imgs)
 
     //console.log(jsonData.p)
