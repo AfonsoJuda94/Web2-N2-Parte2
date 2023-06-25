@@ -4,6 +4,8 @@ const fs = require('fs')
 const Team = require('../models/Team')
 const dataBase = require('../models/Partidas')
 const { async } = require('regenerator-runtime')
+const Times_imgs = require('../models/Times_imgs')
+
 
 
 Sorteio()
@@ -63,12 +65,12 @@ async function Sorteio(){
     
 }
 async function leitura_partidas(){
-    const x =await dataBase.find()
+    const x = await dataBase.find()
+    const y = await Times_imgs.find()
     
-
-    arquivo_partidas = x[0].p
-    const arquivo_times_imgs = fs.readFileSync('times_imgs.json',{encoding: "utf-8"})
-    const times_imgs = JSON.parse(arquivo_times_imgs)
+    const arquivo_partidas = x[0].p
+    const arquivo_imgs = y[0].lista_imgs
+    const arquivo_times = y[0].lista_times
 
     //console.log(jsonData.p)
     //Procurar nas partidas selecionadas os nomes dos times e seus escudos
@@ -77,19 +79,24 @@ async function leitura_partidas(){
     arquivo_partidas.forEach( e => {
         str+='<div style="border: 15px solid blue; display: flex; justify-content:space-between; border-radius:15px; background-color: rgb(2, 2, 153); margin:10px;width:370px">'
         for(let j=0;j<2;j++){
-            str += '<div style="margin: 10px; "><img style ="" src = '+times_imgs.lista_imgs[e[j]]+'/><h3 style="text-align:center">'+times_imgs.lista_times[e[j]]+"</h3></div>"
+            str += '<div style="margin: 10px; "><img style ="" src = '+arquivo_imgs[e[j]]+'/><h3 style="text-align:center">'+arquivo_times[e[j]]+"</h3></div>"
             //console.log(times_imgs.lista_times[e[j]])
             if(j==0)
                 str+= '<h1 style="position:relative; top:60px;">VS</h1>'
             
         }
         str+='</div>'
-        console.log(str)
+        //console.log(str)
     })
     str+="</div>"
     return str
 }
 
+async function a(){
+    const x = await Times_imgs.find()
+    console.log("Arquivo times_imgs: "+x[0].lista_imgs)
+}
+a()
 mongoose.connect(`mongodb+srv://judah:xa2a2dQQRSVWZWCD@teste.10zb6tc.mongodb.net/?retryWrites=true&w=majority`)
     .then(()=> {
         console.log('Conectamos ao mongoDB')
